@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="96" id="KGk-i7-Jjw" customClass="HotelNearbyHeaderTableViewCell" customModule="Hotel_Travel_UI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upb-Dc-3Vj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotels Nearby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNW-FT-ZPP">
+                                <rect key="frame" x="30" y="18" width="159" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTY-np-yIf">
+                                <rect key="frame" x="219" y="18" width="81" height="42"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show all">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zNW-FT-ZPP" secondAttribute="bottom" constant="4" id="GjY-Mu-Guw"/>
+                            <constraint firstItem="zNW-FT-ZPP" firstAttribute="leading" secondItem="upb-Dc-3Vj" secondAttribute="leading" constant="30" id="Js7-A3-Mpo"/>
+                            <constraint firstItem="zNW-FT-ZPP" firstAttribute="top" secondItem="upb-Dc-3Vj" secondAttribute="top" constant="18" id="LT9-VN-Ah2"/>
+                            <constraint firstItem="HTY-np-yIf" firstAttribute="top" secondItem="upb-Dc-3Vj" secondAttribute="top" constant="18" id="XDa-s5-h0s"/>
+                            <constraint firstAttribute="trailing" secondItem="HTY-np-yIf" secondAttribute="trailing" constant="20" id="aeD-Jl-1bk"/>
+                            <constraint firstAttribute="height" constant="64" id="c5w-MB-aSO"/>
+                            <constraint firstAttribute="bottom" secondItem="HTY-np-yIf" secondAttribute="bottom" constant="4" id="qjX-Bn-4c7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="upb-Dc-3Vj" secondAttribute="bottom" id="A2r-Yn-meX"/>
+                    <constraint firstAttribute="trailing" secondItem="upb-Dc-3Vj" secondAttribute="trailing" id="WnW-iI-w8A"/>
+                    <constraint firstItem="upb-Dc-3Vj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZoP-Zx-tgC"/>
+                    <constraint firstItem="upb-Dc-3Vj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uYH-PW-uui"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="showAll" destination="HTY-np-yIf" id="lWh-P3-fpF"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="52.232142857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
